@@ -1,0 +1,396 @@
+(base) neilabh@Lenovo:~$ atom
+(base) neilabh@Lenovo:~$ git config --global core.editor atom
+(base) neilabh@Lenovo:~$ git.config --list
+git.config: command not found
+(base) neilabh@Lenovo:~$ git config --list
+user.name=Neilabh Banzal
+user.email=neilabhbanzal21@gmail.com
+core.editor=atom
+(base) neilabh@Lenovo:~$ git remote add origin https://github.com/Neilabh21/Git-Session
+fatal: Not a git repository (or any parent up to mount point /home/neilabh)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+(base) neilabh@Lenovo:~$ cd Documents/
+(base) neilabh@Lenovo:~/Documents$ mkdir Git
+(base) neilabh@Lenovo:~/Documents$ cd Git
+(base) neilabh@Lenovo:~/Documents/Git$ git inti
+git: 'inti' is not a git command. See 'git --help'.
+
+Did you mean this?
+	init
+(base) neilabh@Lenovo:~/Documents/Git$ ^C
+(base) neilabh@Lenovo:~/Documents/Git$ git init
+Initialized empty Git repository in /home/neilabh/Documents/Git/.git/
+(base) neilabh@Lenovo:~/Documents/Git$ git remote add origin https://github.com/Neilabh21/Git-Session
+(base) neilabh@Lenovo:~/Documents/Git$ dir
+(base) neilabh@Lenovo:~/Documents/Git$ git clone https://github.com/Neilabh21/Git-Session
+Cloning into 'Git-Session'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+Checking connectivity... done.
+(base) neilabh@Lenovo:~/Documents/Git$ dir
+Git-Session
+(base) neilabh@Lenovo:~/Documents/Git$ cd Git session
+bash: cd: Git: No such file or directory
+(base) neilabh@Lenovo:~/Documents/Git$ cd Git-Session/
+(base) neilabh@Lenovo:~/Documents/Git/Git-Session$ mkdir Aruja
+(base) neilabh@Lenovo:~/Documents/Git/Git-Session$ mkdir Aravind
+(base) neilabh@Lenovo:~/Documents/Git/Git-Session$ mkdir Shashank
+(base) neilabh@Lenovo:~/Documents/Git/Git-Session$ mkdir Pranjal
+(base) neilabh@Lenovo:~/Documents/Git/Git-Session$ git checkout
+Your branch is up-to-date with 'origin/master'.
+(base) neilabh@Lenovo:~/Documents/Git/Git-Session$ git commit
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+	Aravind/
+	Aruja/
+	Common.m
+	Pranjal/
+	Shashank/
+
+nothing added to commit but untracked files present
+(base) neilabh@Lenovo:~/Documents/Git/Git-Session$ git add -i
+
+*** Commands ***
+  1: status	  2: update	  3: revert	  4: add untracked
+  5: patch	  6: diff	  7: quit	  8: help
+What now> 4
+  1: Aravind/Common.m
+  2: Aruja/Common.m
+  3: Common.m
+  4: Pranjal/Common.m
+  5: Shashank/Common.m
+Add untracked>> *
+added 5 paths
+
+*** Commands ***
+  1: status	  2: update	  3: revert	  4: add untracked
+  5: patch	  6: diff	  7: quit	  8: help
+What now> 4
+No untracked files.
+
+*** Commands ***
+  1: status	  2: update	  3: revert	  4: add untracked
+  5: patch	  6: diff	  7: quit	  8: help
+What now> q 
+Bye.
+(base) neilabh@Lenovo:~/Documents/Git/Git-Session$ git commit
+Aborting commit due to empty commit message.
+(base) neilabh@Lenovo:~/Documents/Git/Git-Session$ git commit -m "1st Update"
+[master ba695be] 1st Update
+ 5 files changed, 5 insertions(+)
+ create mode 100644 Aravind/Common.m
+ create mode 100644 Aruja/Common.m
+ create mode 100644 Common.m
+ create mode 100644 Pranjal/Common.m
+ create mode 100644 Shashank/Common.m
+(base) neilabh@Lenovo:~/Documents/Git/Git-Session$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': Neilabh21
+Password for 'https://Neilabh21@github.com': 
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 474 bytes | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/Neilabh21/Git-Session
+   fa72a64..ba695be  master -> master
+(base) neilabh@Lenovo:~/Documents/Git/Git-Session$ git add -i
+           staged     unstaged path
+  1:    unchanged        +0/-1 Aravind/Common.m
+  2:    unchanged        +0/-1 Aruja/Common.m
+  3:    unchanged        +0/-1 Pranjal/Common.m
+  4:    unchanged        +0/-1 Shashank/Common.m
+
+*** Commands ***
+  1: status	  2: update	  3: revert	  4: add untracked
+  5: patch	  6: diff	  7: quit	  8: help
+What now> 4
+  1: Task 1/Aravind/Common.m
+  2: Task 1/Aruja/Common.m
+  3: Task 1/Pranjal/Common.m
+  4: Task 1/Shashank/Common.m
+  5: Task 1/Utkarsh/Common.m
+  6: Task 2/Common/Common.m
+Add untracked>> *
+added 6 paths
+
+*** Commands ***
+  1: status	  2: update	  3: revert	  4: add untracked
+  5: patch	  6: diff	  7: quit	  8: help
+What now> q
+Bye.
+(base) neilabh@Lenovo:~/Documents/Git/Git-Session$ git commit -m "1st Update"
+[master 6e73315] 1st Update
+ 6 files changed, 6 insertions(+)
+ create mode 100644 Task 1/Aravind/Common.m
+ create mode 100644 Task 1/Aruja/Common.m
+ create mode 100644 Task 1/Pranjal/Common.m
+ create mode 100644 Task 1/Shashank/Common.m
+ create mode 100644 Task 1/Utkarsh/Common.m
+ create mode 100644 Task 2/Common/Common.m
+(base) neilabh@Lenovo:~/Documents/Git/Git-Session$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': Neilabh21
+Password for 'https://Neilabh21@github.com': 
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 407 bytes | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Neilabh21/Git-Session
+   ba695be..6e73315  master -> master
+(base) neilabh@Lenovo:~/Documents/Git/Git-Session$ git add -i
+           staged     unstaged path
+  1:    unchanged        +0/-1 Aravind/Common.m
+  2:    unchanged        +0/-1 Aruja/Common.m
+  3:    unchanged        +0/-1 Pranjal/Common.m
+  4:    unchanged        +0/-1 Shashank/Common.m
+
+*** Commands ***
+  1: status	  2: update	  3: revert	  4: add untracked
+  5: patch	  6: diff	  7: quit	  8: help
+What now> 4
+  1: Task 1/Millen/Common.m
+  2: Task 1/Mitalee/Common.m
+  3: Task 1/Neilabh/Common.m
+  4: Task 1/Prajwal/Common.m
+Add untracked>> *
+added 4 paths
+
+*** Commands ***
+  1: status	  2: update	  3: revert	  4: add untracked
+  5: patch	  6: diff	  7: quit	  8: help
+What now> q
+Bye.
+(base) neilabh@Lenovo:~/Documents/Git/Git-Session$ git commit -m "3rd Update"
+[master 02bede9] 3rd Update
+ 4 files changed, 4 insertions(+)
+ create mode 100644 Task 1/Millen/Common.m
+ create mode 100644 Task 1/Mitalee/Common.m
+ create mode 100644 Task 1/Neilabh/Common.m
+ create mode 100644 Task 1/Prajwal/Common.m
+(base) neilabh@Lenovo:~/Documents/Git/Git-Session$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': Neilabh21
+Password for 'https://Neilabh21@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 361 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Neilabh21/Git-Session
+   6e73315..02bede9  master -> master
+(base) neilabh@Lenovo:~/Documents/Git/Git-Session$ git push origin --force
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': Neilabh21
+Password for 'https://Neilabh21@github.com': 
+Everything up-to-date
+(base) neilabh@Lenovo:~/Documents/Git/Git-Session$ git checkout -b Branch1
+D	Aravind/Common.m
+D	Aruja/Common.m
+D	Pranjal/Common.m
+D	Shashank/Common.m
+Switched to a new branch 'Branch1'
+(base) neilabh@Lenovo:~/Documents/Git/Git-Session$ git push -u origin Branch1
+Username for 'https://github.com': Neilabh21
+Password for 'https://Neilabh21@github.com': 
+Total 0 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'Branch1' on GitHub by visiting:
+remote:      https://github.com/Neilabh21/Git-Session/pull/new/Branch1
+remote: 
+To https://github.com/Neilabh21/Git-Session
+ * [new branch]      Branch1 -> Branch1
+Branch Branch1 set up to track remote branch Branch1 from origin.
+(base) neilabh@Lenovo:~/Documents/Git/Git-Session$ git push Branch1
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: 'Branch1' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) neilabh@Lenovo:~/Documents/Git/Git-Session$ git push -u Branch1
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: 'Branch1' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) neilabh@Lenovo:~/Documents/Git/Git-Session$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': Neilabh21
+Password for 'https://Neilabh21@github.com': 
+Everything up-to-date
+(base) neilabh@Lenovo:~/Documents/Git/Git-Session$ git log
+commit 02bede9e2a297fc6410c221dca9cb110d6988401
+Author: Neilabh Banzal <neilabhbanzal21@gmail.com>
+Date:   Fri Apr 10 15:05:26 2020 +0530
+
+    3rd Update
+
+commit 6e7331554ce667316d8624445258bd994e14d4de
+Author: Neilabh Banzal <neilabhbanzal21@gmail.com>
+Date:   Fri Apr 10 15:01:47 2020 +0530
+
+    1st Update
+
+commit ba695be698d9b2a4486c6e0b32379f09c2b600a7
+Author: Neilabh Banzal <neilabhbanzal21@gmail.com>
+Date:   Fri Apr 10 14:58:35 2020 +0530
+
+    1st Update
+
+commit fa72a64656100c1ec5143dca5615f75a687fea4b
+Author: Neilabh Banzal <34180039+Neilabh21@users.noreply.github.com>
+Date:   Fri Apr 10 14:46:13 2020 +0530
+
+    Initial commit
+(base) neilabh@Lenovo:~/Documents/Git/Git-Session$ git log > log.txt
+(base) neilabh@Lenovo:~/Documents/Git/Git-Session$ 
+
